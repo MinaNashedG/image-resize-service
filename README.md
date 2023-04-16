@@ -4,7 +4,7 @@ the package `com.deBijenkorf.imageresizeservice.controller`
 that exposes three endpoints for image resizing.
 
 ### Show Image Endpoint
-`Endpoint: GET ~/image/show/<predefined-type-name>/<dummy-seo-name>/?reference=<unique-original-image-filename>`
+`Endpoint: GET /image/show/{predefined-type-name}/{dummy-seo-name}/?reference=<unique-original-image-filename>`
 
 This endpoint returns a resized image with a predefined type name .
 
@@ -13,7 +13,7 @@ This endpoint returns a resized image with a predefined type name .
 `reference: The original filename of the image.`
 
 ### Flush Image Endpoint
-`Endpoint: DELETE ~/image/flush/<predefined-image-type>/reference=<unique-original-image-filename>`
+`Endpoint: DELETE /image/flush/{predefined-image-type}/?reference=<unique-original-image-filename>`
 
 This endpoint removes a resized image with a predefined type name.
 
